@@ -1,0 +1,24 @@
+shell:
+    program: /usr/bin/zsh
+
+window:
+    title: Alacritty
+
+    class:
+        instance: Alacritty
+        general: Alacritty
+
+    padding:
+        x: 8
+        y: 6
+
+    opacity: 1.0
+
+font:
+    normal:
+        family: JetBrains Mono
+    italic:
+        family: JetBrains Mono
+    bold:
+        family: JetBrains Mono
+    size: 13.0
