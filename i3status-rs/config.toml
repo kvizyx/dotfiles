@@ -1,36 +1,86 @@
-[theme]
-theme = "dracula"
+#general {
+#  colors = true
+#  color_good = "#a3be8c"
+#  color_bad  = "#bf616a"
+#  color_degraded = "#ebcb8b"
+#  interval = 1
+#  separator = "|"
+#}
 
-[icons]
-icons = "awesome6"
+order += "volume master"
+order += "disk /"
+#order += "disk /home"
+#order += "run_watch DHCP"
+#order += "ipv6"
+#order += "run_watch VPN"
+#order += "wireless wlp4s0"
+#order += "ethernet enp0s25"
+#order += "battery 0"
+order += "cpu_temperature 0"
+#order += "cpu_usage 0"
+#order += "load"
+order += "tztime local"
 
-[[block]]
-block = "weather"
-format = "$icon $temp,$wind m/s"
-[block.service]
-name = "metno"
-coordinates = ["59.73286911037461","30.088806152343754"]
+#wireless wlp4s0 {
+#    format_up = "%quality  %essid %ip"
+#    format_down = ""
+#}
 
-[[block]]
-block = "disk_space"
-info_type = "available"
-alert_unit = "GB"
-alert = 10.0
-warning = 15.0
-format = " $icon $available "
-format_alt = " $icon $available / $total "
+#ethernet enp0s25 {
+    #if you use %speed, i3status requires root privileges
+#    format_up = "%ip (%speed)"
+#    format_down = ""
+#}
 
-[[block]]
-block = "memory"
-format = " $icon $mem_used.eng(w:1) "
-format_alt = " $icon_swap $swap_free.eng(w:3,u:B,p:M)/$swap_total.eng(w:3,u:B,p:M)($swap_used_percents.eng(w:2)) "
-interval = 30
-warning_mem = 70
-critical_mem = 90
+#battery 0 {
+#    format = "%status %percentage %remaining"
+#    format_down = ""
+#    last_full_capacity = true
+#    integer_battery_capacity = true
+#    low_threshold = 11
+#    threshold_type = percentage
+#    hide_seconds = true
+#    status_chr = " "
+#    status_bat = " "
+#    status_unk = " "
+#    status_full = " "
+#}
 
-[[block]]
-block = "time"
-interval = 60
-[block.format]
-full = " $icon $timestamp.datetime(f:'%d.%m.%y %R', l:ru_RU) "
-short = " $icon $timestamp.datetime(f:%R) "
+#run_watch DHCP {
+#    pidfile = "/var/run/dhclient*.pid"
+#}
+
+#run_watch VPN {
+#    pidfile = "/var/run/vpnc/pid"
+#}
+
+tztime local {
+    format = "%e %B, %A  %H:%M"
+}
+
+#load {
+#    format = " %1min"
+#}
+
+#cpu_usage {
+#    format = " %usage"
+#}
+
+cpu_temperature 0 {
+	format = "CPU: %degrees°C"
+}
+
+disk "/" {
+	format = "Disk: %avail"
+	prefix_type	= custom
+	low_threshold = 20
+	threshold_type = percentage_avail
+}
+
+volume master {
+    format = "Volume: %volume "
+    format_muted = " "
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
