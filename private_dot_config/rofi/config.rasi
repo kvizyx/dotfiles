@@ -1,0 +1,7 @@
+configuration {
+    modi: "drun,run";
+    drun-display-format: "{name}";
+    prompt: "Launch →";
+}
+
+@theme "~/.config/rofi/styles/squared-nord.rasi"

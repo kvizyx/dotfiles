@@ -1,0 +1,21 @@
+[colors.primary]
+background = '#1d2128'
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "JetBrainsMono"
+style = "Regular"
+
+[shell]
+program = "/bin/zsh"
+
+[[keyboard.bindings]]
+key = "NumpadEnter"
+chars = "\r"
+
+[window]
+opacity = 1.0
+padding.x = 5
+padding.y = 5
