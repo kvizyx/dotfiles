@@ -1,6 +1,7 @@
 [user]
 	name = Kirill Sudakov
 	email = kvzxeverywhere@gmail.com
+	signingkey = A1CDD1B5853BDC2B
 [init]
 	defaultBranch = main
 [url "ssh://git@github.com/"]
@@ -18,3 +19,5 @@
 	required = true
 [commit]
 	gpgsign = true
+[tag]
+	gpgSign = true

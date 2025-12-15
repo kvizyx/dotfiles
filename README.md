@@ -11,9 +11,11 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 
 curl -f https://zed.dev/install.sh | sh
 
-pacman -S git zip unzip rofi wayland waybar hyprland wl-clipboard zsh bluez bluez-utils blueman pulseaudio hyprpaper sddm ghostty firefox noto-fonts-cjk noto-fonts-emoji noto-fonts NetworkManager telegram-desktop discord fastfetch wlr-randr 
+pacman -S git zip unzip rofi wayland waybar hyprland wl-clipboard zsh bluez bluez-utils blueman pulseaudio hyprpaper sddm ghostty firefox noto-fonts-cjk noto-fonts-emoji noto-fonts NetworkManager telegram-desktop discord fastfetch wlr-randr docker
 
 yay -S spotify
+curl -fsSL https://bun.sh/install | bash
+usermod -aG docker $USER
 
 # Set zsh as default editor (make sure its allowed in /etc/shells).
 chsh -s $(which zsh)
@@ -23,6 +25,7 @@ chsh -s $(which zsh)
 
 ```bash
 systemctl enable sddm
+systemctl enable docker
 systemctl enable --now NetworkManager
 systemctl enable --now bluetooth
 ```
