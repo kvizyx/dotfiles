@@ -1,0 +1,9 @@
+font-family = JetBrains Mono
+background-opacity = 0.85
+
+gtk-single-instance = true
+gtk-titlebar = false
+
+shell-integration = zsh
+window-padding-x = 10
+background = 151515

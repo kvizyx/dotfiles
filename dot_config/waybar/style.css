@@ -1,0 +1,67 @@
+@define-color foreground #eaeaea;
+@define-color primary #F0C674;
+@define-color secondary #8ABEB7;
+@define-color disabled #707880;
+
+* {
+  font-family: JetBrainsMono;
+  font-size: 14px;
+  min-height: 0;
+}
+
+tooltip {
+  background: rgb(31,31,33);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#waybar.top {
+  background: #151515;
+}
+
+window#waybar {
+  color: @foreground;
+}
+
+#clock,
+#language,
+#cpu,
+#memory,
+#pulseaudio,
+#keyboard-state,
+#tray {
+  padding: 0 6px;
+}
+
+#workspaces button {
+  padding: 0 6px;  
+  border-radius: 0;
+  color: @foreground;
+}
+
+#workspaces button.active {
+  background: rgb(55,59,65);
+  border-bottom: 0px solid @foreground;
+}
+
+#workspaces button.urgent {
+  background: rgb(165,66,66);
+}
+
+#workspaces button.empty {
+  color: @disabled;
+}
+
+#keyboard-state {
+  color: @foreground;
+}
+
+#keyboard-state.capslock {
+  background: @disabled;
+  color: @foreground;
+}
+
+#pulseaudio.muted {
+  color: @disabled;
+}

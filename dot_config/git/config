@@ -1,0 +1,20 @@
+[user]
+	name = Kirill Sudakov
+	email = kvzxeverywhere@gmail.com
+[init]
+	defaultBranch = main
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[url "ssh://git@gitlab.com/"]
+	insteadOf = https://gitlab.com/
+[push]
+	autoSetupRemote = true
+[core]
+	autocrlf = input
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	gpgsign = true

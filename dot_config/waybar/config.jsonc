@@ -1,0 +1,51 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "modules-left": [
+    "hyprland/workspaces",
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "hyprland/language",
+    "pulseaudio",
+    "memory",
+    "cpu",
+    "tray"
+  ],
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "sort-by-name": true
+  },
+  "clock": {
+    "interval": 1,
+    "format": "{:%A, %d %B, %H:%M}",
+    "format-alt": "{:%H:%M}",
+    "tooltip": false
+  },
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "format-ru": "RU",
+  },
+  "pulseaudio": {
+    "format": "Volume: {volume}%",
+    "format-muted": "Muted",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol"
+  },
+  "memory": {
+    "interval": 2,
+    "format": "Memory: {percentage}%"
+  },
+  "cpu": {
+    "interval": 2,
+    "format": "CPU: {usage}%"
+  },
+  "tray": {
+    "spacing": 16
+  }
+}
