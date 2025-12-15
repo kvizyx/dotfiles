@@ -13,6 +13,7 @@ curl -f https://zed.dev/install.sh | sh
 
 pacman -S git zip unzip rofi wayland waybar hyprland wl-clipboard zsh bluez bluez-utils blueman pulseaudio hyprpaper sddm ghostty firefox noto-fonts-cjk noto-fonts-emoji noto-fonts NetworkManager telegram-desktop discord fastfetch wlr-randr docker flameshot grim nautilus
 
+mkdir -p ~/Pictures/Screenshots
 yay -S spotify
 curl -fsSL https://bun.sh/install | bash
 usermod -aG docker $USER
