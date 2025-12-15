@@ -36,6 +36,8 @@ alias gc="sudo nano ~/.config/ghostty/config"
 alias wc="sudo nano ~/.config/waybar/config.jsonc"
 alias ws="sudo nano ~/.config/waybar/style.css"
 
+alias pamcan="pacman"
+alias pamcam="pacman"
 alias ff="fastfetch"
 alias bye="shutdown now"
 
