@@ -11,10 +11,10 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 
 curl -f https://zed.dev/install.sh | sh
 
-pacman -S git zip unzip rofi wayland waybar hyprland wl-clipboard zsh bluez bluez-utils blueman pulseaudio hyprpaper sddm ghostty firefox noto-fonts-cjk noto-fonts-emoji noto-fonts NetworkManager telegram-desktop discord fastfetch wlr-randr docker flameshot grim nautilus qt6-svg qt6-declarative qt5-quickcontrols2 code
+pacman -S git zip unzip rofi wayland waybar hyprland wl-clipboard zsh bluez bluez-utils blueman pulseaudio hyprpaper sddm ghostty firefox noto-fonts-cjk noto-fonts-emoji noto-fonts NetworkManager telegram-desktop discord fastfetch wlr-randr docker flameshot grim nautilus qt6-svg qt6-declarative qt5-quickcontrols2
 
 mkdir -p ~/Pictures/Screenshots
-yay -S spotify
+yay -S spotify visual-studio-code-bin
 curl -fsSL https://bun.sh/install | bash
 usermod -aG docker $USER
 
