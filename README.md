@@ -1,7 +1,7 @@
 # Dotfiles
 
-These dotfiles should work on [Arch](https://archlinux.org/download).
-Please note that they are most likely only suitable for me :)
+[Arch](https://archlinux.org/download).
+Please note that they are most likely only suitable for me.
 
 # Setup
 
