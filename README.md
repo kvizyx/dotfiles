@@ -7,6 +7,8 @@ Please note that they are most likely only suitable for me.
 
 1. Install the base applications, tools and utilities.
 
+- [Chaotic-AUR](https://aur.chaotic.cx)
+
 ```bash
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
 
